@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forget</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+
+        /* CSS from welcome.css */
+        .title {
+            font-family: 'Reem Kufi Ink', sans-serif;
+            font-size: 2em;
+            color: #000000;
+            text-align: center;
+            margin-top: 5%; /* Adjusted margin */
+        }
+
+        body {
+            font-family: 'Reem Kufi Ink', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #C0737A, #FFFDD0, #68855C);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 480px; /* Set height to fit display */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 100
+        }
+
+        #title {
+            font-size: 40px; /* Adjusted font size */
+        }
+
+        input {
+            width: 200px; /* Adjusted width */
+            background: linear-gradient(45deg, #ffffff, #5b5b5b);
+            padding: 15px;
+            margin: 5px 0 10px; /* Adjusted margin */
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 100px;
+            font-family: 'Reem Kufi Ink', sans-serif;
+            font-size: 18px; /* Increased font size */
+        }
+
+        button {
+            background: linear-gradient(45deg, #78775f, #ffffff);
+            padding: 10px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Reem Kufi Ink', sans-serif;
+            margin-top: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-left: 30px;
+        }
+
+        .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .send-otp, .resend-otp {
+            background: linear-gradient(45deg, #ffffff, #5b5b5b);
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .arrow {
+            color: black;
+            font-size: 70px;
+            border: 3px solid black;
+            border-radius: 100px;
+            text-decoration: none;
+        }
+
+        .arrow:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <h1 class="title">Account...?</h1>
+    <span class="material-symbols-outlined" style="font-size: 100px;">person_alert</span>
+    <div class="container">
+        <div class="column">
+            <input type="text" id="email_or_phone" placeholder="Enter Email or Phone Number" name="email_or_phone" required>
+            <button class="send-otp">Send OTP</button>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+        </div>
+        <div class="column">
+            <input type="text" id="otp" placeholder="Enter OTP" name="otp" required>
+            <button class="resend-otp">Resend</button>
+            <input type="password" id="confirm_password" placeholder="Confirm Password" name="confirm_password" required>
+        </div>
+    </div>
+    <a href="login.html" style="color: black;"><span class="material-symbols-outlined " style="font-size: 70px;border:3px solid black ; border-radius:100px">
+arrow_right_alt
+</span></a>
+</body>
+</html>
+
+
